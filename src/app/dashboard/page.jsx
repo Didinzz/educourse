@@ -1,11 +1,13 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { FaArrowUp, FaCalendarAlt, FaCog, FaHome } from "react-icons/fa";
 import { FaCertificate, FaChartLine, FaClock, FaFire, FaFlag, FaFlagUsa, FaGlobe, FaLanguage, FaMedal, FaStar, FaToriiGate, FaTrophy, FaUsers } from "react-icons/fa6";
 
 export default function DashboardPage() {
     const [openSidebar, setOpenSidebar] = useState(false);
+    const router = useRouter();
 
     return (
         <div className="bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-100 min-h-screen">
@@ -288,7 +290,7 @@ export default function DashboardPage() {
                                         </div>
                                         <span className="text-lg font-bold text-blue-600">Rp 750K</span>
                                     </div>
-                                    <button className="w-full bg-gradient-to-r from-pink-500 to-orange-400 text-white py-3 rounded-lg font-semibold hover:from-pink-600 hover:to-orange-500 transition-all duration-300 transform hover:scale-105 cursor-pointer" onClick={window.location.href = "/form"} >
+                                    <button className="w-full bg-gradient-to-r from-pink-500 to-orange-400 text-white py-3 rounded-lg font-semibold hover:from-pink-600 hover:to-orange-500 transition-all duration-300 transform hover:scale-105 cursor-pointer" onClick={() => router.push("/form")} >
                                         Daftar Sekarang
                                     </button>
                                 </div>
@@ -313,7 +315,7 @@ export default function DashboardPage() {
                                         </div>
                                         <span className="text-lg font-bold text-blue-600">Rp 850K</span>
                                     </div>
-                                    <button className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 text-white py-3 rounded-lg font-semibold hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 cursor-pointer" onClick={() => window.location.href = "/form"}>
+                                    <button className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 text-white py-3 rounded-lg font-semibold hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 cursor-pointer" onClick={() => router.push("/form")}>
                                         Daftar Sekarang
                                     </button>
                                 </div>

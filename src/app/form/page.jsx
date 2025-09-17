@@ -1,10 +1,12 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useRef, useState } from "react";
 import { FaGlobe, FaGraduationCap, FaLanguage, FaPaperclip, FaTrophy, FaUser, FaUsers, FaWpforms } from "react-icons/fa6";
 
 export default function PendaftaranPage() {
     const formRef = useRef(null);
+    const route = useRouter();
     const [loading, setLoading] = useState(false);
 
     const [biodataInfo, setBiodataInfo] = useState(null);
@@ -30,6 +32,7 @@ export default function PendaftaranPage() {
             setBiodataInfo(null);
             setBuktiInfo(null);
             setLoading(false);
+            route.push("/notifikasi");
             // tidak menampilkan modal / alert, sesuai permintaan
         }, 1200);
     };
@@ -312,7 +315,6 @@ export default function PendaftaranPage() {
                                 {/* Submit */}
                                 <div className="pt-6 animate-fade-in" style={{ animationDelay: "0.6s" }}>
                                     <button
-                                        onClick={() => window.location.href = "/notifikasi"}
                                         type="submit"
                                         disabled={loading}
                                         className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 px-8 rounded-xl font-semibold text-lg hover:from-blue-700 hover:to-purple-700 focus:ring-4 focus:ring-blue-200 transition-all duration-300 transform hover:scale-[1.02] hover:shadow-xl disabled:opacity-70 cursor-pointer"

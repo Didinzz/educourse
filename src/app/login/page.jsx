@@ -1,11 +1,13 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export default function LoginPage() {
     const [showPwd, setShowPwd] = useState(false);
     const [loading, setLoading] = useState(false);
     const [sending, setSending] = useState(false);
+    const router = useRouter();
 
     const onLogin = async (e) => {
         e.preventDefault();
@@ -13,7 +15,7 @@ export default function LoginPage() {
         setTimeout(() => {
             setLoading(false);
             (e.target).reset();
-            window.location.href = "/dashboard";
+            router.push("/dashboard");
         }, 1500);
     };
 
