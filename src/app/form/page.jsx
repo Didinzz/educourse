@@ -203,7 +203,7 @@ export default function PendaftaranPage() {
                                             className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all duration-300 hover:border-purple-300 bg-white"
                                             defaultValue=""
                                         >
-                                            <option value=""><FaLanguage className="mr-2 text-lg" /> Pilih bahasa yang ingin dipelajari</option>
+                                            <option value="">Pilih bahasa yang ingin dipelajari</option>
                                             <option value="english">🇺🇸 Bahasa Inggris</option>
                                             <option value="mandarin">🇨🇳 Bahasa Mandarin</option>
                                             <option value="japanese">🇯🇵 Bahasa Jepang</option>
@@ -312,6 +312,7 @@ export default function PendaftaranPage() {
                                 {/* Submit */}
                                 <div className="pt-6 animate-fade-in" style={{ animationDelay: "0.6s" }}>
                                     <button
+                                        onClick={() => window.location.href = "/notifikasi"}
                                         type="submit"
                                         disabled={loading}
                                         className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 px-8 rounded-xl font-semibold text-lg hover:from-blue-700 hover:to-purple-700 focus:ring-4 focus:ring-blue-200 transition-all duration-300 transform hover:scale-[1.02] hover:shadow-xl disabled:opacity-70 cursor-pointer"

@@ -13,6 +13,7 @@ export default function LoginPage() {
         setTimeout(() => {
             setLoading(false);
             (e.target).reset();
+            window.location.href = "/dashboard";
         }, 1500);
     };
 

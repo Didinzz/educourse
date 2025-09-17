@@ -278,7 +278,7 @@ export default function DashboardPage() {
                                 </div>
                                 <div className="p-6">
                                     <div className="flex items-center justify-between mb-4">
-                                        <span className="text-sm text-gray-600 flex items-center"><FaClock className="mr-1"/> 3 bulan</span>
+                                        <span className="text-sm text-gray-600 flex items-center"><FaClock className="mr-1" /> 3 bulan</span>
                                         <span className="text-sm text-gray-600 flex items-center"><FaUsers className="mr-2" /> 24 siswa</span>
                                     </div>
                                     <div className="flex items-center justify-between mb-4">
@@ -288,7 +288,7 @@ export default function DashboardPage() {
                                         </div>
                                         <span className="text-lg font-bold text-blue-600">Rp 750K</span>
                                     </div>
-                                    <button className="w-full bg-gradient-to-r from-pink-500 to-orange-400 text-white py-3 rounded-lg font-semibold hover:from-pink-600 hover:to-orange-500 transition-all duration-300 transform hover:scale-105">
+                                    <button className="w-full bg-gradient-to-r from-pink-500 to-orange-400 text-white py-3 rounded-lg font-semibold hover:from-pink-600 hover:to-orange-500 transition-all duration-300 transform hover:scale-105 cursor-pointer" onClick={window.location.href = "/form"} >
                                         Daftar Sekarang
                                     </button>
                                 </div>
@@ -313,7 +313,7 @@ export default function DashboardPage() {
                                         </div>
                                         <span className="text-lg font-bold text-blue-600">Rp 850K</span>
                                     </div>
-                                    <button className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 text-white py-3 rounded-lg font-semibold hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 transform hover:scale-105">
+                                    <button className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 text-white py-3 rounded-lg font-semibold hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 cursor-pointer" onClick={() => window.location.href = "/form"}>
                                         Daftar Sekarang
                                     </button>
                                 </div>
@@ -326,7 +326,7 @@ export default function DashboardPage() {
                         {/* Upcoming Schedule */}
                         <div className="bg-white rounded-2xl p-8 card-hover animate-slide-left" style={{ animationDelay: "0.8s" }}>
                             <h3 className="text-xl font-bold text-gray-800 mb-6 flex items-center">
-                                <span className="mr-3"><FaCalendarAlt className="text-blue-600"/></span> Jadwal Mendatang
+                                <span className="mr-3"><FaCalendarAlt className="text-blue-600" /></span> Jadwal Mendatang
                             </h3>
                             <div className="space-y-4">
                                 <div className="flex items-center space-x-4 p-4 bg-blue-50 rounded-lg">
