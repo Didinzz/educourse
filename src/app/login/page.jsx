@@ -13,9 +13,9 @@ export default function LoginPage() {
         e.preventDefault();
         setLoading(true);
         setTimeout(() => {
+            router.push("/dashboard");
             setLoading(false);
             (e.target).reset();
-            router.push("/dashboard");
         }, 1500);
     };
 
