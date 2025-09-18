@@ -54,7 +54,7 @@ export default function LoginPage() {
                                     name="username"
                                     type="username"
                                     required
-                                    placeholder="alya rahma abubakar"
+                                    placeholder="username"
                                     className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 input-focus transition-all duration-300 hover:border-blue-300"
                                 />
                             </div>
