@@ -46,15 +46,15 @@ export default function LoginPage() {
                     <div className="p-8">
                         <form className="space-y-6" onSubmit={onLogin}>
                             <div className="animate-slide-up">
-                                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                                <label htmlFor="username" className="block text-sm font-medium text-gray-700 mb-2">
                                     Username
                                 </label>
                                 <input
-                                    id="email"
-                                    name="email"
-                                    type="email"
+                                    id="username"
+                                    name="username"
+                                    type="username"
                                     required
-                                    placeholder="nama@email.com"
+                                    placeholder="alya rahma abubakar"
                                     className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 input-focus transition-all duration-300 hover:border-blue-300"
                                 />
                             </div>
